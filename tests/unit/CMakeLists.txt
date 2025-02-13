@@ -6,7 +6,7 @@ endif()
 
 # project information
 project(unit_tests
-        VERSION 1.8.0
+        VERSION 1.9.0
 	      DESCRIPTION "Unit tests for app-seed-tool Ledger Application"
         LANGUAGES C)
 
@@ -151,6 +151,12 @@ add_executable(test_words ./tests/words.c ../../src/common/bip39/seed_rom_variab
 target_include_directories(test_words PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../../src/common)
 target_link_libraries(test_words PUBLIC cmocka gcov testutils sskr sss)
 
-foreach(target test_sss test_sskr test_bip39 test_roundtrip test_words)
+add_executable(test_base64 tests/base64.c ../../src/common/bip85/seed_rom_variables.c ../../src/common/bip85/base64.c)
+target_link_libraries(test_base64 PUBLIC cmocka gcov)
+
+add_executable(test_base85 tests/base85.c ../../src/common/bip85/seed_rom_variables.c ../../src/common/bip85/base85.c)
+target_link_libraries(test_base85 PUBLIC cmocka gcov)
+
+foreach(target test_sss test_sskr test_bip39 test_roundtrip test_words test_base64 test_base85)
     add_test(NAME ${target} COMMAND ${target})
 endforeach()
