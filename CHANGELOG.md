@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add functions that implement several BIP85 applications
 - Add unit tests for base64 and base85
 
+### Fixed
+
+- Fixed multiple assignment of `sskr_share_count` variable
+
 ## [1.8.0] - 2024-10-28
 
 ### Added
