@@ -5,13 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.9.0] - 2025-02-17
+## [1.9.0] - 2025-02-19
 
 ### Added
 
 - Add functions that implement several BIP85 applications
 - Add unit tests for base64 and base85
 - Add BIP85 application menus to generate BIP39 children on Flex and Stax
+- Add BIP85 application menus to generate base64 passwords on Flex and Stax
 
 ### Fixed
 
