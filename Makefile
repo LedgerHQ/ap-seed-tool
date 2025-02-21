@@ -1,6 +1,6 @@
 #*******************************************************************************
 #   Ledger App
-#   (c) 2024 Ledger
+#   (c) 2025 Ledger SAS
 #
 #  Licensed under the Apache License, Version 2.0 (the "License");
 #  you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ all: default
 
 APPNAME = "Seed Tool"
 APPVERSION_M = 1
-APPVERSION_N = 8
+APPVERSION_N = 9
 APPVERSION_P = 0
 APPVERSION   = "$(APPVERSION_M).$(APPVERSION_N).$(APPVERSION_P)"
 

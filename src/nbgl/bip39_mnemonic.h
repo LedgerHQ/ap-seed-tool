@@ -1,5 +1,5 @@
 /*******************************************************************************
- *   (c) 2016-2022 Ledger SAS
+ *   (c) 2016-2025 Ledger SAS
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -69,6 +69,10 @@ size_t bip39_mnemonic_word_add(const char* const buffer, const size_t size);
  */
 void bip39_mnemonic_from_sskr_shares(unsigned char* seed);
 
+/*
+ * Encode BIP39 mnemonic from hex input
+ */
+void bip39_mnemonic_encode(const uint8_t* seed, uint8_t seed_len);
 /*
  * Returns the mnemonic passphrase
  */
